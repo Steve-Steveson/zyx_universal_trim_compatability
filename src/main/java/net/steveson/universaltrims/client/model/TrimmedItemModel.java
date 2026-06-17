@@ -1,4 +1,4 @@
-package net.steveson.createtrimmable.client.model;
+package net.steveson.universaltrims.client.model;
 
 /*
  * Licensed under the EUPL, Version 1.2.
@@ -37,7 +37,7 @@ import net.minecraftforge.client.model.geometry.StandaloneGeometryBakingContext;
 import net.minecraftforge.client.model.geometry.UnbakedGeometryHelper;
 import org.jetbrains.annotations.Nullable;
 
-import net.steveson.createtrimmable.client.RenderHelpers;
+import net.steveson.universaltrims.client.RenderHelpers;
 //import net.steveson.createtrimmable.util.Helpers;
 import org.joml.Quaternionf;
 import org.joml.Vector3f;

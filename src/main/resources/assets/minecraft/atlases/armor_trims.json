@@ -72,9 +72,9 @@
             ],
             "palette_key": "trims/color_palettes/trim_palette",
             "permutations": {
-                "brass": "trimmable_create_armor:trims/color_palettes/brass",
-                "rose_quartz": "trimmable_create_armor:trims/color_palettes/rose_quartz",
-                "zinc": "trimmable_create_armor:trims/color_palettes/zinc"
+                "brass": "zyx_universal_trim_compatibility:trims/color_palettes/brass",
+                "rose_quartz": "zyx_universal_trim_compatibility:trims/color_palettes/rose_quartz",
+                "zinc": "zyx_universal_trim_compatibility:trims/color_palettes/zinc"
             }
         }
     ]

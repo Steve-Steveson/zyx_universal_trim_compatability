@@ -1,4 +1,4 @@
-package net.steveson.createtrimmable;
+package net.steveson.universaltrims;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.client.Minecraft;
@@ -17,24 +17,23 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.fml.loading.FMLEnvironment;
-import net.steveson.createtrimmable.client.ClientEventHandler;
+import net.steveson.universaltrims.client.ClientEventHandler;
 import org.slf4j.Logger;
 
 import java.util.HashMap;
 
 // The value here should match an entry in the META-INF/mods.toml file
-@Mod(CreateTrimmableMod.MOD_ID)
-public class CreateTrimmableMod
+@Mod(UniversalTrimMod.MOD_ID)
+public class UniversalTrimMod
 {
     // Define mod id in a common place for everything to reference
-    public static final String MOD_ID = "trimmable_create_armor";
+    public static final String MOD_ID = "zyx_universal_trim_compatibility";
     // Directly reference a slf4j logger
     private static final Logger LOGGER = LogUtils.getLogger();
-    public CreateTrimmableMod(FMLJavaModLoadingContext context)
+    public UniversalTrimMod(FMLJavaModLoadingContext context)
     {
         IEventBus modEventBus = context.getModEventBus();
 

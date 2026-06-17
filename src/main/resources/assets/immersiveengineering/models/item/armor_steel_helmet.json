@@ -1,5 +1,5 @@
 {
-  "loader": "trimmable_create_armor:trimmed_item",
+  "loader": "zyx_universal_trim_compatibility:trimmed_item",
   "parent": "forge:item/default",
   "textures": {
     "armor": "immersiveengineering:item/armor_steel_helmet",

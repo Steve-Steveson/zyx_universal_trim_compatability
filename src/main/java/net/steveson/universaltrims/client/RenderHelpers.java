@@ -1,4 +1,4 @@
-package net.steveson.createtrimmable.client;
+package net.steveson.universaltrims.client;
 
 /*
  * Licensed under the EUPL, Version 1.2.
@@ -25,12 +25,8 @@ import net.minecraft.client.player.AbstractClientPlayer;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.client.renderer.GameRenderer;
 import net.minecraft.client.renderer.ItemInHandRenderer;
-import net.minecraft.client.renderer.LightTexture;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.RenderType;
-import net.minecraft.client.renderer.Sheets;
-import net.minecraft.client.renderer.block.BlockModelShaper;
-import net.minecraft.client.renderer.block.BlockRenderDispatcher;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.layers.CustomHeadLayer;
 import net.minecraft.client.renderer.entity.layers.PlayerItemInHandLayer;
@@ -38,28 +34,20 @@ import net.minecraft.client.renderer.entity.player.PlayerRenderer;
 import net.minecraft.client.renderer.texture.MissingTextureAtlasSprite;
 import net.minecraft.client.renderer.texture.TextureAtlas;
 import net.minecraft.client.renderer.texture.TextureAtlasSprite;
-import net.minecraft.client.resources.model.BakedModel;
-import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.util.Mth;
-import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.HumanoidArm;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.inventory.InventoryMenu;
 import net.minecraft.world.item.ItemDisplayContext;
 import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.phys.AABB;
-import net.minecraft.world.phys.Vec3;
 import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraftforge.client.extensions.common.IClientFluidTypeExtensions;
-import net.minecraftforge.client.model.data.ModelData;
 import net.minecraftforge.fluids.FluidStack;
-import net.steveson.createtrimmable.CreateTrimmableMod;
+import net.steveson.universaltrims.UniversalTrimMod;
 import org.joml.Matrix4f;
 
 //import net.dries007.tfc.common.capabilities.heat.HeatCapability;
@@ -530,7 +518,7 @@ public final class RenderHelpers
      */
     public static ModelLayerLocation modelIdentifier(String name, String part)
     {
-        return new ModelLayerLocation(new ResourceLocation(CreateTrimmableMod.MOD_ID, name), part);
+        return new ModelLayerLocation(new ResourceLocation(UniversalTrimMod.MOD_ID, name), part);
     }
 
     public static ModelLayerLocation modelIdentifier(String name)

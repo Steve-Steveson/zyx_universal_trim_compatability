@@ -196,8 +196,8 @@ tasks.named('processResources', ProcessResources).configure {
 
 mixin {
     // MixinGradle Settings
-    add sourceSets.main, 'mixins.trimmable_create_armor.refmap.json'
-    config 'mixins.trimmable_create_armor.json'
+    add sourceSets.main, 'mixins.zyx_universal_trim_compatibility.refmap.json'
+    config 'mixins.zyx_universal_trim_compatibility.json'
 
     debug.verbose = true
     debug.export = true
